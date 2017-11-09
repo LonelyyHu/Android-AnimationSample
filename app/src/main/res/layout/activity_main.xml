@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lonelyyhu.exercise.animationsample.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_envelope"/>
+
+    <Button
+        android:id="@+id/btn_start1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="300dp"
+        android:text="Start Ani 1"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End"
+        app:layout_constraintTop_toTopOf="@+id/btn_start1"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_start1"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/btn_start2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="start ani 2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start1"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_start1"/>
+
+</android.support.constraint.ConstraintLayout>
